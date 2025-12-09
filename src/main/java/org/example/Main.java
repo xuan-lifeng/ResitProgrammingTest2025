@@ -31,7 +31,7 @@ public class Main {
 
         ArrayList<JPanel> panels = new ArrayList<>();
         ArrayList<JLabel> labels = new ArrayList<>();
-
+        
         for (Bay bays : list) {
             JPanel p = new JPanel();
             JLabel l = new JLabel("Loading...");

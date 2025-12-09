@@ -6,6 +6,6 @@ public class Nightingale extends Bay{
     }
     protected  String getServiceName(){
         return "Ultrasound scanner inactive";
-    };
+    }
 }
 

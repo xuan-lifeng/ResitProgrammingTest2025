@@ -23,7 +23,6 @@ public class Main {
         list.add(new Breckinridge("Breckinridge Bay", info, notification));
 
 
-
         JFrame frame = new JFrame("Bay Service Dashboard");
         frame.setSize(900, 800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        MedicalNotification notification = new MedicalNotification("None","Dialysis machine");
+        MedicalNotification notification = new MedicalNotification("None","Dialysis machine, ECG recorder, Ultrasound scanner, Masseur");
         HospitalInformation info = new HospitalInformation();
 
         ArrayList<Bay> list = new ArrayList<>();
@@ -21,6 +21,7 @@ public class Main {
         list.add(new Sanger("Sanger Bay", info, notification));
         list.add(new Cavell("Cavell Bay", info, notification));
         list.add(new Breckinridge("Breckinridge Bay", info, notification));
+
 
 
         JFrame frame = new JFrame("Bay Service Dashboard");

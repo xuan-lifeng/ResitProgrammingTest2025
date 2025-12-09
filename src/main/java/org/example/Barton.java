@@ -4,7 +4,8 @@ public class Barton extends Bay{
     public Barton (String name, HospitalInformation info, MedicalNotification notification) {
         super("Barton Bay",info, notification);
     }
-    protected String getServiceName(){
+    @Override
+    protected String getStatus(){
         return "Service taking place";
-    };
+    }
 }

@@ -4,7 +4,8 @@ public class Dix extends Bay{
     public Dix (String name, HospitalInformation info, MedicalNotification notification) {
         super("Dix Bay",info, notification);
     }
-    protected  String getServiceName(){
+    @Override
+    protected String getStatus(){
         return "Service taking place";
-    };
+    }
 }

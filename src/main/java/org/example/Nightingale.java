@@ -4,7 +4,8 @@ public class Nightingale extends Bay{
     public Nightingale (String name, HospitalInformation info, MedicalNotification notification) {
         super("Nightingale Bay",info, notification);
     }
-    protected  String getServiceName(){
+    @Override
+    protected String getStatus(){
         return "Ultrasound scanner inactive";
     }
 }

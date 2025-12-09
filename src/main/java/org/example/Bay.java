@@ -15,6 +15,8 @@ public abstract class Bay {
     public void update() {
         service= notification.getService();
     }
+    protected abstract String getStatus();
+
     public String getDisplayText() {
         return "<html><b>" + name + "</b><br>"
                 + "Service: " + service + "<br>";

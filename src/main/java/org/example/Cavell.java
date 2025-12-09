@@ -4,7 +4,8 @@ public class Cavell extends Bay{
     public Cavell (String name, HospitalInformation info, MedicalNotification notification) {
         super("Cavell Bay",info, notification);
     }
-    protected  String getServiceName(){
+    @Override
+    protected String getStatus(){
         return "Service taking place";
-    };
+    }
 }

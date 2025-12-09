@@ -3,7 +3,8 @@ public class Sanger extends Bay{
     public Sanger (String name, HospitalInformation info, MedicalNotification notification) {
         super("Sanger Bay",info, notification);
     }
-    protected  String getServiceName(){
+    @Override
+    protected String getStatus(){
         return "Service taking place";
     }
 }

@@ -4,7 +4,8 @@ public class Seacole extends Bay{
     public Seacole (String name, HospitalInformation info, MedicalNotification notification) {
         super("Seacole Bay",info, notification);
     }
-    protected  String getServiceName(){
+    @Override
+    protected String getStatus(){
         return "ECG recorder and Masseur inactive";
-    };
+    }
 }

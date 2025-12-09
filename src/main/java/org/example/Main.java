@@ -4,11 +4,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+
 public class Main {
 
     public static void main(String[] args) {
 
-        MedicalNotification notification = new MedicalNotification("Dix", "Ultrasound");
+        MedicalNotification notification = new MedicalNotification("None","Dialysis machine");
         HospitalInformation info = new HospitalInformation();
 
         ArrayList<Bay> list = new ArrayList<>();
@@ -31,7 +32,7 @@ public class Main {
 
         ArrayList<JPanel> panels = new ArrayList<>();
         ArrayList<JLabel> labels = new ArrayList<>();
-        
+
         for (Bay bays : list) {
             JPanel p = new JPanel();
             JLabel l = new JLabel("Loading...");
@@ -59,7 +60,7 @@ public class Main {
             counter[0]++;
             if (counter[0] == 20) {
                 counter[0] = 0;
-                System.out.println("===== VITALS LOG =====");
+                System.out.println("===== SERVICES LOG =====");
                 for (Bay bays : list) {
                     System.out.println(
                             bays.getDisplayText()

@@ -5,6 +5,6 @@ public class Henderson extends Bay{
         super("Henderson Bay",info, notification);
     }
     protected  String getServiceName(){
-        return "Dialysis";
+        return "Dialysis inactive";
     };
 }
